@@ -1,5 +1,5 @@
 ﻿-- create schemas
-CREATE SCHEMA SanPhamBans;
+CREATE SCHEMA SanPhamBan;
 go
 
 CREATE SCHEMA KinhDoanh;
