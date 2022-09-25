@@ -1,0 +1,17 @@
+﻿using BDMS_Final_Project.Models;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BDMS_Final_Project.Controllers.Interface
+{
+    internal interface ILoginDAO
+    {
+        bool checkLogin(LoginModels input);
+        DataTable getUser(LoginModels user);
+        
+    }
+}

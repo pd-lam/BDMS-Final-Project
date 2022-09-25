@@ -10,11 +10,13 @@ CREATE TABLE SanPhamBan.Loai_SP (
 	Ma_Loai_SP INT IDENTITY (1, 1) PRIMARY KEY,
 	Ten_Loai_SP VARCHAR (255) NOT NULL
 );
+go
 
 CREATE TABLE SanPhamBan.Nhan_Hieu (
 	Ma_Nhan_Hieu INT IDENTITY (1, 1) PRIMARY KEY,
 	Ten_Nhan_Hieu VARCHAR (255) NOT NULL
 );
+go
 
 CREATE TABLE SanPhamBan.San_Pham (
 	Ma_San_Pham INT IDENTITY (1, 1) PRIMARY KEY,
@@ -26,6 +28,7 @@ CREATE TABLE SanPhamBan.San_Pham (
 	FOREIGN KEY (Ma_Loai_SP) REFERENCES SanPhamBan.Loai_SP (Ma_Loai_SP) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Ma_Nhan_Hieu) REFERENCES SanPhamBan.Nhan_Hieu (Ma_Nhan_Hieu) ON DELETE CASCADE ON UPDATE CASCADE
 );
+go
 
 CREATE TABLE KinhDoanh.Khach_Hang (
 	Ma_KH INT IDENTITY (1, 1) PRIMARY KEY,
@@ -37,6 +40,7 @@ CREATE TABLE KinhDoanh.Khach_Hang (
 	Thanh_Pho VARCHAR (50),
 	Tinh VARCHAR (25)
 );
+go
 
 CREATE TABLE KinhDoanh.Cua_Hang (
 	Ma_Cua_Hang INT IDENTITY (1, 1) PRIMARY KEY,
@@ -47,6 +51,7 @@ CREATE TABLE KinhDoanh.Cua_Hang (
 	Thanh_Pho VARCHAR (255),
 	Tinh VARCHAR (10)
 );
+go
 
 CREATE TABLE KinhDoanh.Nhan_Vien (
 	Ma_Nhan_Vien INT IDENTITY (1, 1) PRIMARY KEY,
@@ -60,6 +65,7 @@ CREATE TABLE KinhDoanh.Nhan_Vien (
 	FOREIGN KEY (Ma_Cua_Hang) REFERENCES Kinhdoanh.Cua_Hang (Ma_Cua_Hang) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Ma_Nguoi_Quan_Ly) REFERENCES Kinhdoanh.Nhan_Vien (Ma_Nhan_Vien) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
+go
 
 CREATE TABLE KinhDoanh.Don_Hang (
 	Ma_Don_Hang INT IDENTITY (1, 1) PRIMARY KEY,
@@ -75,6 +81,7 @@ CREATE TABLE KinhDoanh.Don_Hang (
 	FOREIGN KEY (Ma_Cua_Hang) REFERENCES Kinhdoanh.Cua_Hang (Ma_Cua_Hang) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Ma_Nhan_Vien) REFERENCES Kinhdoanh.Nhan_Vien (Ma_Nhan_Vien) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
+go
 
 CREATE TABLE KinhDoanh.Chi_Tiet_Don_Hang (
 	Ma_Don_Hang INT,
@@ -87,8 +94,9 @@ CREATE TABLE KinhDoanh.Chi_Tiet_Don_Hang (
 	FOREIGN KEY (Ma_Don_Hang) REFERENCES Kinhdoanh.Don_Hang (Ma_Don_Hang) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Ma_SP) REFERENCES SanPhamBan.San_Pham (Ma_San_Pham) ON DELETE CASCADE ON UPDATE CASCADE
 );
+go
 
-CREATE TABLE SanPhamBan.TonKho (
+CREATE TABLE SanPhamBan.Ton_Kho (
 	Ma_Cua_Hang INT,
 	Ma_San_Pham INT,
 	So_Luong INT,
@@ -96,8 +104,9 @@ CREATE TABLE SanPhamBan.TonKho (
 	FOREIGN KEY (Ma_Cua_Hang) REFERENCES Kinhdoanh.Cua_Hang (Ma_Cua_Hang) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Ma_San_Pham) REFERENCES SanPhamBan.San_Pham (Ma_San_Pham) ON DELETE CASCADE ON UPDATE CASCADE
 );
+go
 
-CREATE TABLE SanPhamBan.NhapLieu(
+CREATE TABLE SanPhamBan.Nhap_Lieu(
 	Ma_Cua_Hang INT,
 	Ma_San_Pham INT,
 	So_Luong INT,
@@ -105,3 +114,13 @@ CREATE TABLE SanPhamBan.NhapLieu(
 	PRIMARY KEY (Ma_Cua_Hang, Ma_San_Pham),
 	FOREIGN KEY (Ma_San_Pham) REFERENCES SanPhamBan.San_Pham (Ma_San_Pham) ON DELETE CASCADE ON UPDATE CASCADE
 );
+go
+
+CREATE TABLE Dang_Nhap(
+	Ma_Nhan_Vien INT,
+	Mat_Khau VARCHAR(50),
+	Admin TINYINT,
+	PRIMARY KEY (Ma_Nhan_Vien, Mat_Khau),
+	FOREIGN KEY (Ma_Nhan_Vien) REFERENCES KinhDoanh.Nhan_Vien (Ma_Nhan_Vien) ON DELETE CASCADE ON UPDATE CASCADE
+);
+go

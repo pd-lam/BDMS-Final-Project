@@ -16,5 +16,10 @@ namespace BDMS_Final_Project
         {
             InitializeComponent();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
