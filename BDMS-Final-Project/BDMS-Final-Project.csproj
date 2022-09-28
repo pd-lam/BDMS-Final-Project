@@ -150,6 +150,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Database\Query\CreateDatabase.sql" />
+    <Content Include="Database\Query\CreateTriggerConstrainView.sql" />
     <Content Include="Database\Query\InsertData.sql" />
   </ItemGroup>
   <ItemGroup>
