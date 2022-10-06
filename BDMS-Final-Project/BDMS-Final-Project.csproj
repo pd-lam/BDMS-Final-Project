@@ -91,6 +91,7 @@
     <Compile Include="Controllers\Interface\IStaffDAO.cs" />
     <Compile Include="Controllers\Interface\IStockDAO.cs" />
     <Compile Include="Controllers\Interface\IStoreDAO.cs" />
+    <Compile Include="Controllers\Utils.cs" />
     <Compile Include="Database\DbConnection.cs" />
     <Compile Include="Models\BrandModel.cs" />
     <Compile Include="Models\CategoryModel.cs" />
@@ -103,34 +104,68 @@
     <Compile Include="Models\StaffModel.cs" />
     <Compile Include="Models\StockModel.cs" />
     <Compile Include="Models\StoreModel.cs" />
-    <Compile Include="Views\Home.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CategoryManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Views\CategoryManagement.Designer.cs">
+      <DependentUpon>CategoryManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerManagement.Designer.cs">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StaffManagement.Designer.cs">
+      <DependentUpon>StaffManagement.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Views\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CategoryManagement.resx">
+      <DependentUpon>CategoryManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerManagement.resx">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
@@ -152,6 +187,13 @@
     <Content Include="Database\Query\CreateDatabase.sql" />
     <Content Include="Database\Query\CreateTriggerConstrainView.sql" />
     <Content Include="Database\Query\InsertData.sql" />
+    <None Include="Imanges\DashboardIcon\exit-solid-48.png" />
+    <None Include="Imanges\DashboardIcon\line-chart-regular-48.png" />
+    <None Include="Imanges\DashboardIcon\package-solid-48.png" />
+    <None Include="Imanges\DashboardIcon\table-regular-48.png" />
+    <None Include="Imanges\DashboardIcon\data-solid-48.png" />
+    <None Include="Imanges\DashboardIcon\user-badge-solid-48.png" />
+    <None Include="Imanges\DashboardIcon\user-solid-48.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">

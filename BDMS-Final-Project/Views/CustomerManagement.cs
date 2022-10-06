@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BDMS_Final_Project
+namespace BDMS_Final_Project.Views
 {
-    public partial class Home : Form
+    public partial class CustomerManagement : Form
     {
-        public Home()
+        public CustomerManagement()
         {
             InitializeComponent();
-        }
-
-        private void Home_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
