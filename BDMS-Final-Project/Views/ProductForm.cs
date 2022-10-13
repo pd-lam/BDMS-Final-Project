@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BDMS_Final_Project.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,12 @@ namespace BDMS_Final_Project.Views
 {
     public partial class ProductForm : Form
     {
+        Utils Utils = new Utils();
+        Form form = new ProductManagement()
+        {
+            TopLevel = false,
+            AutoScroll = false
+        }; 
         public ProductForm()
         {
             InitializeComponent();
@@ -19,14 +26,26 @@ namespace BDMS_Final_Project.Views
 
         private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form form = new
-                CategoryManagement()
-            {
-                TopLevel = false,
-                AutoScroll = false
-            };
             panel.Controls.Add(form);
-            form.Show();
+            Utils.showSubForm(form, panel);
+        }
+
+        private void productToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel.Controls.Add(form);
+            Utils.showSubForm(form, panel);
+        }
+
+        private void stockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel.Controls.Add(form);
+            Utils.showSubForm(form, panel);
+        }
+
+        private void brandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel.Controls.Add(form);
+            Utils.showSubForm(form, panel);
         }
     }
 }

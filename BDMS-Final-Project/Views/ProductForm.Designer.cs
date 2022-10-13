@@ -47,42 +47,45 @@
             this.brandToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1012, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1012, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // categoryToolStripMenuItem
             // 
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(90, 26);
+            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.categoryToolStripMenuItem.Text = "Danh mục";
             this.categoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(89, 26);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.productToolStripMenuItem.Text = "Sản phẩm";
+            this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // stockToolStripMenuItem
             // 
             this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
-            this.stockToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
+            this.stockToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.stockToolStripMenuItem.Text = "Quản lý tồn kho";
+            this.stockToolStripMenuItem.Click += new System.EventHandler(this.stockToolStripMenuItem_Click);
             // 
             // brandToolStripMenuItem
             // 
             this.brandToolStripMenuItem.Name = "brandToolStripMenuItem";
-            this.brandToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.brandToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
             this.brandToolStripMenuItem.Text = "Quản lý nhãn hiệu";
+            this.brandToolStripMenuItem.Click += new System.EventHandler(this.brandToolStripMenuItem_Click);
             // 
             // panel
             // 
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel.Location = new System.Drawing.Point(0, 30);
+            this.panel.Location = new System.Drawing.Point(0, 28);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1012, 643);
+            this.panel.Size = new System.Drawing.Size(1012, 645);
             this.panel.TabIndex = 1;
             // 
             // ProductForm
