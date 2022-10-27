@@ -196,13 +196,13 @@
     <Content Include="Database\Query\CreateDatabase.sql" />
     <Content Include="Database\Query\CreateTriggerConstrainView.sql" />
     <Content Include="Database\Query\InsertData.sql" />
-    <None Include="Imanges\DashboardIcon\exit-solid-48.png" />
-    <None Include="Imanges\DashboardIcon\line-chart-regular-48.png" />
-    <None Include="Imanges\DashboardIcon\package-solid-48.png" />
-    <None Include="Imanges\DashboardIcon\table-regular-48.png" />
-    <None Include="Imanges\DashboardIcon\data-solid-48.png" />
-    <None Include="Imanges\DashboardIcon\user-badge-solid-48.png" />
-    <None Include="Imanges\DashboardIcon\user-solid-48.png" />
+    <None Include="Images\DashboardIcon\exit-solid-48.png" />
+    <None Include="Images\DashboardIcon\line-chart-regular-48.png" />
+    <None Include="Images\DashboardIcon\package-solid-48.png" />
+    <None Include="Images\DashboardIcon\table-regular-48.png" />
+    <None Include="Images\DashboardIcon\data-solid-48.png" />
+    <None Include="Images\DashboardIcon\user-badge-solid-48.png" />
+    <None Include="Images\DashboardIcon\user-solid-48.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">
