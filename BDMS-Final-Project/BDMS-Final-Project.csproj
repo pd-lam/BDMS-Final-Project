@@ -86,7 +86,7 @@
     <Compile Include="Controllers\Interface\IImportDAO.cs" />
     <Compile Include="Controllers\Interface\ILoginDAO.cs" />
     <Compile Include="Controllers\Interface\IOrderDAO.cs" />
-    <Compile Include="Controllers\Interface\IOrderDetailDAO1.cs" />
+    <Compile Include="Controllers\Interface\IOrderDetailDAO.cs" />
     <Compile Include="Controllers\Interface\IProductDAO.cs" />
     <Compile Include="Controllers\Interface\IStaffDAO.cs" />
     <Compile Include="Controllers\Interface\IStockDAO.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BDMS_Final_Project.Models
 {
-    internal class LoginModels
+    internal class LoginModel
     {
         private int _id;
         private int _isadmin;
