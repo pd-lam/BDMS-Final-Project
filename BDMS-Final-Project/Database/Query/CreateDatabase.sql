@@ -5,6 +5,9 @@ go
 CREATE SCHEMA KinhDoanh;
 go
 
+Use BikeStores
+go
+
 -- create tables
 CREATE TABLE SanPhamBan.Loai_SP (
 	Ma_Loai_SP INT IDENTITY (1, 1) PRIMARY KEY,
