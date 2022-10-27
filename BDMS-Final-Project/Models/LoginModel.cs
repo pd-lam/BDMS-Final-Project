@@ -8,15 +8,12 @@ namespace BDMS_Final_Project.Models
 {
     internal class LoginModels
     {
-        private int id;
-        private int isadmin;
-        private string password;
+        private int _id;
+        private int _isadmin;
+        private string _password;
 
-        public int Id
-            { get { return id; } set { id = value; } }
-        public int isAdmin 
-            { get { return isadmin; } set { isadmin = value; } }
-        public string Password
-            { get { return password; } set { password = value; } }
+        public int Id { get => _id; set => _id = value; }
+        public int Isadmin { get => _isadmin; set => _isadmin = value; }
+        public string Password { get => _password; set => _password = value; }
     }
 }
