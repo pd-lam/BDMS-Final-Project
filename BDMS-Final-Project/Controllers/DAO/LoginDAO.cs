@@ -14,24 +14,39 @@ namespace BDMS_Final_Project.Controllers.DAO
 {
     internal class LoginDAO : ILoginDAO
     {
-        SqlConnection conn = new DbConnection().getConnection();
-
-        public bool checkLogin(LoginModels input)
+        public bool checkLogin(LoginModel input)
         {
-            /*
-             * Nếu getUserInfo.row.count == 1 --> đăng nhập thành công
-             * else trả thông báo lỗi
-             */
-            return true;
+            throw new NotImplementedException();
         }
 
-        public DataTable getUser(LoginModels user)
+        public void delete(LoginModel user)
         {
-            /*
-             * Tìm record trong table Dang_Nhap thông qua biến user.Id và user.Password
-             * và lưu vào trong một DataTable
-             */
-            return null;
+            throw new NotImplementedException();
+        }
+
+        public List<LoginModel> getAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public LoginModel getUserById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public LoginModel getUserByName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void insert(LoginModel user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void update(LoginModel user)
+        {
+            throw new NotImplementedException();
         }
     }
 }

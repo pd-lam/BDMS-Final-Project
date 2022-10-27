@@ -8,5 +8,9 @@ namespace BDMS_Final_Project.Models
 {
     internal class BrandModel
     {
+        private int _id;
+        private string _name;
+        public int Id { get { return _id; } }
+        public string Name { get { return _name; } set { _name = value; } }
     }
 }

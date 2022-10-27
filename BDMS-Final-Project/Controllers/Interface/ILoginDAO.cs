@@ -10,8 +10,12 @@ namespace BDMS_Final_Project.Controllers.Interface
 {
     internal interface ILoginDAO
     {
-        bool checkLogin(LoginModels input);
-        DataTable getUser(LoginModels user);
-        
+        bool checkLogin(LoginModel input);
+        void insert(LoginModel user);
+        void update(LoginModel user);
+        void delete(LoginModel user);
+        LoginModel getUserById(int id);
+        LoginModel getUserByName(string name);
+        List<LoginModel> getAll();
     }
 }
