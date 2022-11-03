@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>BDMS_Final_Project</RootNamespace>
     <AssemblyName>BDMS-Final-Project</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -105,11 +105,6 @@
     <Compile Include="Models\StaffModel.cs" />
     <Compile Include="Models\StockModel.cs" />
     <Compile Include="Models\StoreModel.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Views\CategoryManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,7 +152,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CategoryManagement.resx">
       <DependentUpon>CategoryManagement.cs</DependentUpon>
@@ -176,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ProductManagement.resx">
       <DependentUpon>ProductManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StaffManagement.resx">
+      <DependentUpon>StaffManagement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />

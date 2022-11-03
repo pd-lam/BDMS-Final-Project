@@ -31,5 +31,10 @@ namespace BDMS_Final_Project.Views
              *      Nếu trả về false --> trả về thông báo lỗi.
              */
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
     }
 }

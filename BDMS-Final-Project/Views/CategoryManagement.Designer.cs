@@ -70,6 +70,7 @@
             this.buttonEdit.Text = "Sửa";
             this.buttonEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonInsert
             // 
@@ -87,6 +88,7 @@
             this.buttonInsert.Text = "Thêm";
             this.buttonInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonInsert.UseVisualStyleBackColor = false;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // buttonCancel
             // 
@@ -104,6 +106,7 @@
             this.buttonCancel.Text = "Đóng";
             this.buttonCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // dataGridView
             // 
@@ -121,7 +124,7 @@
             // 
             // CategoryManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 643);
             this.Controls.Add(this.buttonDelete);

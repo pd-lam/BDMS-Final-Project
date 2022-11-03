@@ -16,5 +16,30 @@ namespace BDMS_Final_Project.Views
         {
             InitializeComponent();
         }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonInsert_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDetail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

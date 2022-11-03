@@ -53,6 +53,7 @@
             this.buttonDelete.Text = "Xóa";
             this.buttonDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonEdit
             // 
@@ -70,6 +71,7 @@
             this.buttonEdit.Text = "Sửa";
             this.buttonEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonInsert
             // 
@@ -87,6 +89,7 @@
             this.buttonInsert.Text = "Thêm";
             this.buttonInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonInsert.UseVisualStyleBackColor = false;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // buttonCancel
             // 
@@ -104,6 +107,7 @@
             this.buttonCancel.Text = "Đóng";
             this.buttonCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // dataGridView
             // 
@@ -135,6 +139,7 @@
             this.buttonDetail.Text = "Chi tiết";
             this.buttonDetail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDetail.UseVisualStyleBackColor = false;
+            this.buttonDetail.Click += new System.EventHandler(this.buttonDetail_Click);
             // 
             // ProductManagement
             // 
